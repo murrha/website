@@ -1,0 +1,27 @@
+/*Making comments like in Java*/
+
+h1, h2, ul li {
+    color:darksalmon; 
+}
+
+
+a{
+    text-decoration: none;
+    color:pink; 
+}
+
+.main{
+    background-color: bisque;
+}
+
+img {
+    margin: 30px;
+    border: 1px solid black;
+    padding: 30px;
+    max-width: 100%;
+}
+
+/* will be applied to all text */
+body{
+    font-family: 'Kanit', sans-serif;
+}
