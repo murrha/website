@@ -1,0 +1,111 @@
+/*Making comments like in Java*/
+
+h1, h2, ul li {
+    color:darksalmon; 
+}
+
+
+a{
+    text-decoration: none;
+    color:pink; 
+}
+
+.main{
+    background-color: bisque;
+}
+
+img {
+    margin: 30px;
+    border: 1px solid black;
+    padding: 30px;
+    max-width: 100%;
+}
+
+/* will be applied to all text */
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%; /*makes sure the navbar extends to width of screen*/
+    background-color: #000;
+}
+
+.nav-list {
+    display:flex;
+    margin-right: 2rem;
+    gap: 20px; 
+}
+
+#about-section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh; /*vh = viewport height*/
+}
+
+#projects-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fix, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem; 
+}
+
+#project-container{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+/*need heart content property to add things to selected element*/
+.heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+  }
+
+  /*::after creates a pseudo element that's last child of selected element*/
+  .heart::after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+
+  /*::before creates a pseudo element that's first child of selected element*/
+  .heart::before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
