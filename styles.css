@@ -1,17 +1,11 @@
 /*Making comments like in Java*/
-
 h1, h2, ul li {
     color:darksalmon; 
 }
 
-
 a{
     text-decoration: none;
     color:pink; 
-}
-
-.main{
-    background-color: bisque;
 }
 
 img {
@@ -29,6 +23,11 @@ body{
 ul{
     text-decoration: none;
     list-style: none;
+}
+
+.header{
+    background-color: #000;
+    width: 100%; 
 }
 
 #navbar{
@@ -63,14 +62,40 @@ ul{
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem; 
+    align-items: center;
+    text-align: center;
 }
 
 #project-container{
     display:flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
 }
 
+.project-tile{
+    align-items: center;
+}
+
+#contact-section{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem; 
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contacts-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 50px; 
+}
 
 /*need heart content property to add things to selected element*/
 .heart {
