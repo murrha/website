@@ -1,136 +1,75 @@
-/*Making comments like in Java*/
-h1, h2, ul li {
-    color:darksalmon; 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Readex+Pro&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
 }
 
 a{
-    text-decoration: none;
-    color:pink; 
+    text-decoration: none; 
 }
 
-img {
-    margin: 30px;
-    border: 1px solid black;
-    padding: 30px;
-    max-width: 100%;
-}
-
-/* will be applied to all text */
 body{
-    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    text-align: center;
+    font-size: 1.25rem; 
 }
 
+h1 {
+    margin: 50px auto 0 auto; 
+    line-height: 2; 
+    background-color: #FEF1E6;
+    font-size: 3.125rem;
+}
+
+h2{
+    font-size: 1.875rem;
+    padding-bottom: 50px; 
+    color: #90AACB; 
+}
+
+hr{
+    border: dotted #EAF6F6 6px; /*6px in width*/
+    border-bottom: none; 
+    width: 4%;
+    margin: 100px auto 100px auto; 
+}
+
+/* centering unordered list */
 ul{
-    text-decoration: none;
-    list-style: none;
+    text-align: left;
+    width: 50%; /* half the width of parent container */
+    position:relative; /* move from relative current position */
+    left: 25%; /* 100-50=50, 50/2=25*/
 }
 
-.header{
-    background-color: #000;
-    width: 100%; 
+/*id*/
+
+/*classes*/
+.top-container{
+    background-color: #FEF1E6;
+    margin: auto; /* to center*/
+    padding: 50px 0 50px 0; 
 }
 
-#navbar{
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    width: 100%; /*makes sure the navbar extends to width of screen*/
-    background-color: #000;
+.info{
+    margin: auto; 
+    width: 40%; 
 }
 
-.nav-list {
-    display:flex;
-    margin-right: 2rem;
-    gap: 20px; 
+.middle-container{
+    
 }
 
-#about-section{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh; /*vh = viewport height*/
+.experience{
+    margin: 50px 0 50px 0;
 }
 
-#projects-section{
-    display: grid;
-    grid-template-columns: repeat(auto-fix, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem; 
-    align-items: center;
-    text-align: center;
+.skills{
+    padding: 50px 0 20px; 
 }
 
-#project-container{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+*.bottom-container{
+    background-color: #F9D5A7;
+    padding: 40px 0 20px;  
 }
-
-.project-tile{
-    align-items: center;
-}
-
-#contact-section{
-    display: flex;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem; 
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.contacts-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap: 20px; 
-    padding: 50px; 
-}
-
-/*need heart content property to add things to selected element*/
-.heart {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: pink;
-    height: 50px;
-    width: 50px;
-    transform: rotate(-45deg);
-  }
-
-  /*::after creates a pseudo element that's last child of selected element*/
-  .heart::after {
-    background-color: pink;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0px;
-    left: 25px;
-  }
-
-  /*::before creates a pseudo element that's first child of selected element*/
-  .heart::before {
-    content: "";
-    background-color: pink;
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 0px;
-  }
