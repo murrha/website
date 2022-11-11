@@ -9,4 +9,4 @@ My portfolio website. Used to hone my skills in HTML, CSS, and Javascript.
 # Wireframe
 
 The first wireframe created on November 10, 2022 with Figma.
-[!alt text](./images/Wireframe.PNG)
+[!Alt text](./images/Wireframe.PNG)
