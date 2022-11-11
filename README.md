@@ -5,3 +5,8 @@ My portfolio website. Used to hone my skills in HTML, CSS, and Javascript.
 * Change the layout to make it more presentable to visitors and recruiters
 * Make it more responsive
 * Add in a contact form 
+
+# Wireframe
+
+The first wireframe created on November 10, 2022 with Figma.
+[!alt text](./images/Wireframe.PNG)
