@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta charset="utf-8">
     <title>Marja Katrina Centina</title>
 
-    <!-- link to css -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- paste import links to the top -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Readex+Pro&display=swap" rel="stylesheet">
@@ -17,78 +14,100 @@
 
 
 <body>
-    
-    <div class="top-container">
-        <h1>I'm Marja</h1>
-        <h2>A fullstack Java developer</h2>
-    </div>
-
     <nav id="navbar">
         <ul>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-
-    <div class="middle-container">
-        <div class="about-me">
-            <h2>Hello</h2>
-            <p class="info">Based in Los Angeles, California. I'm creative individual who enjoys expressing herself through web design. I also find the user experience to play an important factor when interacting with an kind of application these days. Each day, I always aim to learn something new and willing to take on new challenges. Thank you for visiting!</p>
-        </div>
-
-        <hr>
-            
-        <div class="experience">
-            <h2>Experience</h2>
-            <div class="experience-containter">
-                <h3>Technology Analyst at Cognizant</h3>
-                <h4>Client - Insurance Company based in Bloomington, Illinois</h4>
-                <p>
-                    <ul>
-                        <li>Resolved SDM tickets related to web and mobile applications</li>
-                        <li>Analyzed and evaluated errors related to system problems</li>
-                        <li>Communicated with team to identify or provide awareness to underlying issues</li>
-                        <li>Prepared queries in Splunk to identify error alerts within monitors  </li>
-                        
-                    </ul>
-                </p>
     
-                <h3>Undergrad Information Systems Intern at Amgen</h3>
-                <p>
-                    <ul>
-                        <li>Devised a solution to automate manual based process using AWS AI tools such as text extraction and intelligent document processing</li>
-                        <li>Presented proposal Amgen business functions</li>
-                        <li>Analyzed and evaluated two hundred records to identify patterns/trends, target fields, and templates</li>
-                        <li>Tested different automation tools and made recommendations</li>
-                        <li>Developed Python scripts to count instances from excel sheets</li>
-                        <li>Created reports to display categories of common keywords identified in documents</li>
-                    </ul>
-                </p>
+    <section id="about-me">
+
+        <img src="/images/Profile.png">
+
+        <div id="description">
+            <h1>I'm Marja Katrina</h1>
+            <p>Based in Los Angeles, California.</p>
+            <p>
+            I'm a creative individual who enjoys expressing herself through web design. I also find the user experience to play an important factor when interacting with any kind of application.<br>
+            <p>Thank you for visiting!
+        </div>
+        
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages</strong> Java, HTML, CSS, SQL, Typescript, Javascript, Python </li>
+            <li><strong>Frameworks</strong> Angular, Spring</li>
+            <li><strong>Certifications</strong> Microsoft Certified: Azure Fundamentals</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <h3>Cognizant Technology Solutions</h3>
+            <h4 class="role">Technology Analyst</h4>
+            <h4 class="dates">October 2021 - present</h4>
+            <p>
+                <ul>
+                    <li>Resolved SDM tickets related to web and mobile applications</li>
+                    <li>Analyzed and evaluated errors related to system problems</li>
+                    <li>Communicated with team to identify or provide awareness to underlying issues</li>
+                    <li>Prepared queries in Splunk to identify error alerts within monitors  </li>
+                    
+                </ul>
+            </p>
+
+            <h3>Amgen</h3>
+            <h4 class="role">Information Systems Undergrad Intern</h4>
+            <h4 class="dates">June 2020 - August 2020</h4>
+            <p>
+                <ul>
+                    <li>Devised a solution to automate manual based process using AWS AI tools such as text extraction and intelligent document processing</li>
+                    <li>Presented proposal Amgen business functions</li>
+                    <li>Analyzed and evaluated two hundred records to identify patterns/trends, target fields, and templates</li>
+                    <li>Tested different automation tools and made recommendations</li>
+                    <li>Developed Python scripts to count instances from excel sheets</li>
+                    <li>Created reports to display categories of common keywords identified in documents</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="projects-item">
+                <a href="https://github.com/murrha/clothing-shop-frontend">
+                    <img src="/images/clothing apparel screenshot 1.PNG" alt="link to github repo to front-end code">
+                    <h3>Clothing Apparel - Work in Progress</h3>
+                    <p>A full-stack e-commerce application made with Java, SQL, Spring Boot, and Angular</p>
+                </a>
+            </div>
+            <div class="projects-item">
+                <a href="https://github.com/murrha/bits-n-bytes">
+                    <img src="/images/bitswebsite.PNG" alt="link to github repo">
+                    <h3>Bits n' Bytes</h3>
+                    <p>A web application made with Angular and Bootstrap for SpreadLOVE Hackathon 202</p>
+                </a>
             </div>
         </div>
-    
-        <hr>
-        
-         <div class="skills"><h2>Skills</h2>
-                <ul>
-                    <li><strong>Languages</strong>: Java, HTML, CSS, C/C++, C#, Javascript, Python, SQL</li>
-                    <li><strong>Frameworks</strong>: Angular, Spring</li>
-                    <li><strong>Certifications</strong> Microsoft Certified: Azure Fundamentals</li>
-                </ul>
-        </div>
-    </div>
+    </section>
 
-    <hr>
-
-    <div class="bottom-container"><h2>Contact</h2>
-        <a class="footer-link" href="https://www.linkedin.com/marja-katrina">LinkedIn</a>
-        <a class="footer-link" href="https://github.com/murrha">GitHub</a>
-        <p class="copyright">© Marja Katrina Centina.</p>
-    </div>
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li><a class="footer-link" href="https://www.linkedin.com/marja-katrina"><img src="/images/linkedin logo.png"></a></li>
+            <li><a class="footer-link" href="https://github.com/murrha"><img src="/images/github.png"></li>
+            <li><a class="footer-link" href="#"><img src="/images/outlook.png"></a></li>
+        </ul>
+        <p>&copy2022 Marja Katrina Centina</p>
+    </footer>
     
 </body>
 </html>

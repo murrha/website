@@ -6,70 +6,152 @@
 }
 
 a{
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 body{
+    background-color: #fff;
     margin: 0;
-    text-align: center;
-    font-size: 1.25rem; 
-}
-
-h1 {
-    margin: 50px auto 0 auto; 
-    line-height: 2; 
-    background-color: #FEF1E6;
-    font-size: 3.125rem;
 }
 
 h2{
-    font-size: 1.875rem;
-    padding-bottom: 50px; 
-    color: #90AACB; 
-}
-
-hr{
-    border: dotted #EAF6F6 6px; /*6px in width*/
-    border-bottom: none; 
-    width: 4%;
-    margin: 100px auto 100px auto; 
-}
-
-/* centering unordered list */
-ul{
-    text-align: left;
-    width: 50%; /* half the width of parent container */
-    position:relative; /* move from relative current position */
-    left: 25%; /* 100-50=50, 50/2=25*/
+    text-align: center; 
 }
 
 /*id*/
+#navbar{
+    background-color: #000;
+    margin: auto; 
+    overflow: hidden;
+}
+
+#navbar a{
+    color: #fff; 
+}
+
+#navbar a:hover, a:visited{
+    color: inherit; 
+}
+
+#navbar ul{
+    list-style: none;
+    padding: 0; 
+    float: right; 
+}
+
+#navbar li{
+    display: inline; 
+    padding: 10px; 
+    color: #fff; 
+}
+
+#navbar :last-child{
+    margin-right: 10px; 
+}
+
+/*inline-block to keep elements in the same block*/
+#about-me{
+    display: inline-block; 
+    margin: 50px; 
+}
+
+#about-me img{
+    float: left; 
+    max-height: 312px;
+    max-width: 312px;
+    width: 30%; 
+    border-radius: 50%;
+    margin-left: 100px;  
+    margin-right: 80px; 
+}
+
+#about-me h1, p{
+    padding-left: 20px;
+}
+
+
+#skills ul{
+    list-style: none; 
+    padding-left: 150px;
+}
+
+
+#experience{
+    display: block; 
+    padding: 50px; 
+}
+
+#projects{
+    padding: 50px; 
+    text-align: center;
+}
+
+#projects img:hover{
+    opacity: 0.5;  
+}
+
+.projects-container{
+    display: flex;
+    padding: 20px; 
+}
+
+.projects-item{
+    display: row; 
+    flex-wrap: wrap;
+}
+
+.projects-item img{
+    width: 75%;
+    height: 75%; 
+}
+
+footer{
+    background-color: #000;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact h2{
+    padding-top: 50px; 
+    color: #fff; 
+}
+#contact ul{
+    list-style: none; 
+}
+
+#contact li{
+    display: inline;
+    padding: 10px; 
+}
+
+#contact img{
+    max-width: 70px;
+    max-height: 70px;
+}
+
+#contact p{
+    color: #fff; 
+    padding-bottom: 40px; 
+}
 
 /*classes*/
-.top-container{
-    background-color: #FEF1E6;
-    margin: auto; /* to center*/
-    padding: 50px 0 50px 0; 
+.experience-container{
+    padding-left: 100px; 
 }
 
-.info{
-    margin: auto; 
-    width: 40%; 
-}
+/*will make it responsive, wont go more than 600px*/
+@media(max-width: 600px){
 
-.middle-container{
-    
-}
+    #about-me{
+        width: 100%;
+        float: none;
+    }
 
-.experience{
-    margin: 50px 0 50px 0;
-}
+    #skills{
+        width: 100%;
+        float: none;
+    }
 
-.skills{
-    padding: 50px 0 20px; 
-}
-
-*.bottom-container{
-    background-color: #F9D5A7;
-    padding: 40px 0 20px;  
 }
